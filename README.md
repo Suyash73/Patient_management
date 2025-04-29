@@ -1,7 +1,6 @@
 Adding Command for Pseudo Data
 
 Patient Data
-
 [
   {
     "name": "Aarav Mehta",
@@ -144,6 +143,7 @@ Patient Data
     "admission_date": "2025-04-04"
   }
 ]
+
 
 
 
