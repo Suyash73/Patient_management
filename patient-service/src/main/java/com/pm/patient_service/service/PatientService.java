@@ -3,6 +3,8 @@ package com.pm.patient_service.service;
 
 import com.pm.patient_service.dto.request.PatientCreateRequestDto;
 import com.pm.patient_service.dto.response.PatientResponseDto;
+import com.pm.patient_service.exception.PatientManagementExceptionHandler;
+import com.pm.patient_service.exception.PatientManagementGatewayException;
 import com.pm.patient_service.mapper.PatientMapper;
 import com.pm.patient_service.model.PatientEntity;
 import com.pm.patient_service.repository.PatientRepository;
@@ -11,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+import static com.pm.patient_service.exception.PatientManagementErrorCode.EMAIL_ALREADY_EXIST;
 
 @Slf4j
 @AllArgsConstructor
@@ -29,8 +33,9 @@ public class PatientService {
     }
 
     public PatientResponseDto createPatient(PatientCreateRequestDto patientCreateRequestDto){
-        if(true == patientRepository.existsByEmail(patientCreateRequestDto.getEmail()))
-            throw new EmailAlreadyExistsException();
+        if(patientRepository.existsByEmail(patientCreateRequestDto.getEmail()))
+            throw new PatientManagementGatewayException(EMAIL_ALREADY_EXIST);
+
         PatientEntity patient = patientRepository
             .save(PatientMapper.patientCreateRequestDtoToEntity(patientCreateRequestDto));
 
