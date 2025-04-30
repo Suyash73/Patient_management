@@ -12,6 +12,7 @@
 
 	<modules>
 		<module>patient-service</module>
+		<module>Patient-Core</module>
 	</modules>
 
 	<properties>
@@ -27,6 +28,11 @@
 				<version>${spring-boot.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<optional>true</optional>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

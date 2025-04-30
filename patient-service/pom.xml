@@ -65,8 +65,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
-
-
+		<dependency>
+			<groupId>com.pm</groupId>
+			<artifactId>Patient-Core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
 
 
 	</dependencies>
