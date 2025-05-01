@@ -1,13 +1,12 @@
 com/pm/utils/ObjectMapperUtil.class
 com/pm/exception/PatientManagementErrorCode$ErrorCategory.class
-com/pm/response/ResponseObject.class
-com/pm/annotation/LogWithMdc.class
-com/pm/aspect/LoggingAspects.class
-com/pm/exception/PatientManagementExceptionHandler.class
 com/pm/annotation/Loggable.class
 com/pm/exception/PatientManagementErrorCode.class
 com/pm/exception/PatientManagementGatewayException.class
 com/pm/audit/SmartLogger.class
 com/pm/aspect/MdcLoggingAspect.class
 com/pm/audit/PatientServiceCreatePatientApiAuditProcessor.class
+com/pm/response/ResponseObject.class
+com/pm/annotation/LogWithMdc.class
 com/pm/response/Meta.class
+com/pm/aspect/LoggingAspects.class

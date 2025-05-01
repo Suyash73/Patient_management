@@ -5,7 +5,6 @@
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/audit/PatientServiceCreatePatientApiAuditProcessor.java
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/audit/SmartLogger.java
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/exception/PatientManagementErrorCode.java
-/home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/exception/PatientManagementExceptionHandler.java
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/exception/PatientManagementGatewayException.java
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/response/Meta.java
 /home/v.suyash.rai/OtherProject/Patient_management/Patient-Core/src/main/java/com/pm/response/ResponseObject.java
