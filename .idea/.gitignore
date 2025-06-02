@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# IDE specific files and folders
+.idea/
+
+# Logs folder
+logs/
+
+echo ".idea/" >> .gitignore
+echo "logs/" >> .gitignore
